@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "": true,
+        "https://github.com/drajcan/kubernetes-academy.git": true
+    }
+}
