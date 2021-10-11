@@ -1,0 +1,104 @@
+[
+  {
+    "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Resources/deployments/CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204/operations/F1C8DA4973A1EBA7",
+    "operationId": "F1C8DA4973A1EBA7",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-09-29T12:48:06.9642925Z",
+      "duration": "PT1M10.0635953S",
+      "trackingId": "316aa0a4-406b-4e8b-bbd5-d750c414bcf8",
+      "serviceRequestId": "ba408750-48ab-44d7-94cc-8d7376af954f",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Compute/virtualMachines/mk",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "mk"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Resources/deployments/CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204/operations/C1C65AF0BAFB3136",
+    "operationId": "C1C65AF0BAFB3136",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-09-29T12:46:58.3437075Z",
+      "duration": "PT1.4430103S",
+      "trackingId": "295fb615-95bb-4bf2-a052-3afe69251c86",
+      "serviceRequestId": "82df5c94-6523-45d2-9260-25700ffa2704",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/networkInterfaces/mk733",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "mk733"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Resources/deployments/CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204/operations/15D0FFEB09F5E0B6",
+    "operationId": "15D0FFEB09F5E0B6",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-09-29T12:44:58.717597Z",
+      "duration": "PT4.1117202S",
+      "trackingId": "79b095a5-1a3a-4cf9-9046-042ec40a883d",
+      "serviceRequestId": "a0ca69b6-ad1c-4475-bda3-53555c945faf",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/virtualNetworks/mk_group-vnet",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "mk_group-vnet"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Resources/deployments/CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204/operations/A576FC1ACB9B5F83",
+    "operationId": "A576FC1ACB9B5F83",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-09-29T12:46:56.368728Z",
+      "duration": "PT2M1.7628512S",
+      "trackingId": "3d525a05-3eb9-4858-8221-3db14b9f7a50",
+      "serviceRequestId": "5d60b07d-dd1d-40fa-99c0-38880d757764",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/networkSecurityGroups/mk-nsg",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "mk-nsg"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Resources/deployments/CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204/operations/62D3127F50B672D4",
+    "operationId": "62D3127F50B672D4",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-09-29T12:46:56.8396354Z",
+      "duration": "PT2M2.2337586S",
+      "trackingId": "5f5d246f-b0fa-4afc-9ce5-da7de4b695ed",
+      "serviceRequestId": "3729635a-ef45-43f1-85ec-907e5d2e738f",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/publicIpAddresses/mk-ip",
+        "resourceType": "Microsoft.Network/publicIpAddresses",
+        "resourceName": "mk-ip"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Resources/deployments/CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204/operations/08585686873918202870",
+    "operationId": "08585686873918202870",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-09-29T12:48:07.1386376Z",
+      "duration": "PT1M10.2379404S",
+      "trackingId": "41980717-5d06-4c99-b61c-1245afa388fb",
+      "statusCode": "OK"
+    }
+  }
+]

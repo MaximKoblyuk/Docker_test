@@ -1,0 +1,255 @@
+{
+  "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Resources/deployments/CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204",
+  "name": "CreateVm-cognosys.gitlab-community-edition-with-u-20210929144204",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourcegroups/mk_group/providers/Microsoft.Compute/virtualMachines/mk",
+    "marketplaceItemId": "cognosys.gitlab-community-edition-with-ubuntu-1804-lts",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "3621036659904204614",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "westeurope"
+      },
+      "networkInterfaceName": {
+        "type": "String",
+        "value": "mk733"
+      },
+      "enableAcceleratedNetworking": {
+        "type": "Bool",
+        "value": true
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "mk-nsg"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "ssh",
+            "properties": {
+              "priority": 1010,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceApplicationSecurityGroups": [],
+              "destinationApplicationSecurityGroups": [],
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "22"
+            }
+          },
+          {
+            "name": "http",
+            "properties": {
+              "priority": 1020,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceApplicationSecurityGroups": [],
+              "destinationApplicationSecurityGroups": [],
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "80"
+            }
+          },
+          {
+            "name": "https",
+            "properties": {
+              "priority": 1030,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceApplicationSecurityGroups": [],
+              "destinationApplicationSecurityGroups": [],
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "443"
+            }
+          }
+        ]
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "default"
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "mk_group-vnet"
+      },
+      "addressPrefixes": {
+        "type": "Array",
+        "value": [
+          "10.0.0.0/16"
+        ]
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "default",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          }
+        ]
+      },
+      "publicIpAddressName": {
+        "type": "String",
+        "value": "mk-ip"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Dynamic"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "mk"
+      },
+      "virtualMachineComputerName": {
+        "type": "String",
+        "value": "mk"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "mk_group"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "StandardSSD_LRS"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_D2_v2"
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "maxim"
+      },
+      "adminPassword": {
+        "type": "SecureString"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2021-09-29T12:48:07.1654963Z",
+    "duration": "PT3M13.5081185S",
+    "correlationId": "ee9604a7-1fe3-43ef-ac3d-9b1833808972",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "westeurope"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "westeurope"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/networkSecurityGroups/mk-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "mk-nsg"
+          },
+          {
+            "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/virtualNetworks/mk_group-vnet",
+            "resourceType": "Microsoft.Network/virtualNetworks",
+            "resourceName": "mk_group-vnet"
+          },
+          {
+            "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/publicIpAddresses/mk-ip",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "mk-ip"
+          }
+        ],
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/networkInterfaces/mk733",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "mk733"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/networkInterfaces/mk733",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "mk733"
+          }
+        ],
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Compute/virtualMachines/mk",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "mk"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "maxim"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Compute/virtualMachines/mk"
+      },
+      {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/networkInterfaces/mk733"
+      },
+      {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/networkSecurityGroups/mk-nsg"
+      },
+      {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/publicIpAddresses/mk-ip"
+      },
+      {
+        "id": "/subscriptions/00bc8731-989e-4291-b885-dbe1b0285119/resourceGroups/mk_group/providers/Microsoft.Network/virtualNetworks/mk_group-vnet"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
